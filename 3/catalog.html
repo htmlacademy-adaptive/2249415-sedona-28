@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2249415-sedona-28/3/">
+</head>
+  <body class="page__body">
+    <div class="page__content">
+      <header class="page-header">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+              </svg>
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__logo-image">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-img" src="img/header/logo.svg" width="185" height="96" alt="Логотип Города Седона.">
+          </a>
+        </div>
+      </header>
+      <main class="page-catalog">
+        <section class="welcome">
+          <div class="welcome__backdrop">
+          <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
+          <img class="welcome__image" src="img/header/sedona.svg" width="229" height="39" alt="Седона.">
+          </div>
+        </section>
+        <section class="intro">
+          <div class="intro__piece">
+          <h2 class="intro__title">фото и видео</h2>
+          <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </section>
+        <section class="cards">
+          <ul class="cards__list">
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <img class="cards__images" src="img/catalog/catalog-photo1.jpg" width="280" height="280" alt="открытый просторы.">
+              </a>
+              <h3 class="cards__title">неродные просторы</h3>
+              <p class="cards__creator">Автор фото: Борис</p>
+              <svg class="like-svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">лайк.</span>
+              <p class="cards__link-text">1350</p>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <img class="cards__images" src="img/catalog/catalog-photo2.jpg" width="280" height="280" alt="местная трава.">
+              </a>
+              <h3 class="cards__title">Местная растительность</h3>
+              <p class="cards__creator">Автор фото: Сергей</p>
+              <svg class="like-svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">лайк.</span>
+              <p class="cards__link-text">143</p>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <img class="cards__images" src="img/catalog/catalog-photo3.jpg" width="280" height="280" alt="дорога в лесу.">
+              </a>
+              <h3 class="cards__title">Дорога на север</h3>
+              <p class="cards__creator">Автор фото: Петр</p>
+              <svg class="like-svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">лайк.</span>
+              <p class="cards__link-text">96</p>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <img class="cards__images" src="img/catalog/catalog-photo4.jpg" width="280" height="280" alt="каньон.">
+              </a>
+              <h3 class="cards__title">Мост дьявола</h3>
+              <p class="cards__creator">Автор фото: Антон</p>
+              <svg class="like-svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">лайк.</span>
+              <p class="cards__link-text">254</p>
+            </li>
+          </ul>
+        </section>
+        <section class="view">
+          <div class="view__piece">
+          <h2 class="view__title">все еще сомневаетесь?</h2>
+          <p class="view__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p class="page-footer__hashtag">#visitsedona</p>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg class="social-svg" aria-hidden="true" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" transform="translate(0.683105)" fill="#81B3D2"/>
+                  <g clip-path="url(#clip0_60847_462)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M36.1331 17.948C36.2991 17.402 36.1331 17 35.3381 17H32.7131C32.0451 17 31.7371 17.347 31.5701 17.73C31.5701 17.73 30.2351 20.926 28.3441 23.002C27.7321 23.604 27.4541 23.795 27.1201 23.795C26.9531 23.795 26.7021 23.604 26.7021 23.057V17.948C26.7021 17.292 26.5181 17 25.9621 17H21.8341C21.4171 17 21.1661 17.304 21.1661 17.593C21.1661 18.214 22.1121 18.358 22.2091 20.106V23.904C22.2091 24.737 22.0561 24.888 21.7221 24.888C20.8321 24.888 18.6671 21.677 17.3821 18.003C17.1331 17.288 16.8811 17 16.2101 17H13.5831C12.8331 17 12.6831 17.347 12.6831 17.73C12.6831 18.412 13.5731 21.8 16.8281 26.281C18.9981 29.341 22.0531 31 24.8361 31C26.5051 31 26.7111 30.632 26.7111 29.997V27.684C26.7111 26.947 26.8691 26.8 27.3981 26.8C27.7881 26.8 28.4551 26.992 30.0131 28.467C31.7931 30.216 32.0861 31 33.0881 31H35.7131C36.4631 31 36.8391 30.632 36.6231 29.904C36.3851 29.18 35.5351 28.129 34.4081 26.882C33.7961 26.172 32.8781 25.407 32.5991 25.024C32.2101 24.533 32.3211 24.314 32.5991 23.877C32.5991 23.877 35.7991 19.451 36.1321 17.948H36.1331Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_60847_462">
+                  <rect width="24" height="24" fill="white" transform="translate(12.6831 12)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <svg class="social-svg" aria-hidden="true" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" transform="translate(0.683105)" fill="#81B3D2"/>
+                  <path d="M35.1223 16.6223L31.9535 31.566C31.7143 32.6205 31.091 32.883 30.2053 32.3865L25.3768 28.8285L23.0473 31.0695C22.7893 31.3275 22.574 31.5428 22.0768 31.5428L22.424 26.6258L31.3723 18.54C31.7615 18.1935 31.2875 18.0008 30.7678 18.348L19.7053 25.314L14.9428 23.823C13.907 23.4998 13.8883 22.7873 15.1588 22.29L33.7865 15.1133C34.649 14.79 35.4035 15.3053 35.1223 16.623V16.6223Z" fill="white"/>
+                  </svg>
+                <span class="visually-hidden">телеграм.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-svg" aria-hidden="true" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" transform="translate(0.683105)" fill="#81B3D2"/>
+                <path d="M31.8644 17H17.4964C15.9893 17 14.6831 18.3 14.6831 19.8V28.1C14.6831 29.7 15.9893 31 17.4964 31H31.8644C33.472 31 34.6777 29.7 34.6777 28.2V19.8C34.7781 18.3 33.472 17 31.8644 17ZM21.7164 27.4V20.6L28.5487 24L21.7164 27.4Z" fill="white"/>
+                </svg>
+                <span class="visually-hidden">ютуб.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__copyright">разработано</p>
+        <a href="https://htmlacademy.ru">
+            <svg aria-hidden="true" focusable="false" width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.3332 0.450012H14.2332L0.733154 1.85001V26.55L14.2332 34.55L27.6332 26.55V1.85001L14.3332 0.450012ZM25.7332 12.55L14.2332 5.75001V5.65001H14.1332L14.0332 5.55001V5.65001L2.63315 12.55V3.55001L14.1332 2.35001L25.7332 3.55001V12.55ZM14.1332 7.25001L25.6332 13.95L21.1332 16.55L14.0332 12.35V13.75L19.9332 17.25L19.0332 17.75L14.0332 14.75V16.15L17.8332 18.45L17.0332 18.95L14.0332 17.15V18.55L15.9332 19.65L14.1332 20.75L2.73315 14.05L14.1332 7.25001ZM2.63315 15.55L14.0332 22.35V23.35L6.13315 18.65V20.05L14.1332 24.85V25.95L6.13315 21.25V22.65L14.1332 27.45L22.2332 22.55V17.35L25.6332 15.35V25.35L14.1332 32.25L2.63315 25.45V15.55Z" fill="black"/>
+              </svg>
+          <span class="visually-hidden">сайт академии.</span>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
