@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+@use "./general/fonts.scss";
+@use "./general/base.scss";
+@use "./general/variable.scss";
+@use "./general/visually-hidden.scss";
+
+@use "./blocks/page-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/page-wrapper.scss";
+@use "./blocks/page.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/introduction.scss";
+@use "./blocks/location.scss";
+@use "./blocks/presentation.scss";
+@use "./blocks/search-hotels.scss";
+@use "./blocks/social.scss";
+@use "./blocks-catalog/welcome.scss";
+@use "./blocks-catalog/cards.scss";
+@use "./blocks-catalog/intro.scss";
+@use "./blocks-catalog/view.scss";
+@use "./blocks-form/feedback.scss";
+@use "./blocks-form/data.scss";
+@use "./blocks-form/control.scss";
+@use "./blocks-form/handset.scss";
+@use "./blocks-form/modal-failure.scss";
+@use "./blocks-form/page-feedback.scss";
+@use "./blocks-form/response.scss";
+

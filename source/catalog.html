@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -45,14 +47,18 @@
           </a>
         </div>
       </header>
-      <main class="page-wrapper">
-        <section class="introduction">
+      <main class="page-catalog">
+        <section class="welcome">
+          <div class="welcome__backdrop">
           <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
-          <img class="introduction__plan" src="img/header/sedona.svg" width="229" height="39" alt="Седона.">
+          <img class="welcome__image" src="img/header/sedona.svg" width="229" height="39" alt="Седона.">
+          </div>
         </section>
         <section class="intro">
+          <div class="intro__piece">
           <h2 class="intro__title">фото и видео</h2>
           <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
         </section>
         <section class="cards">
           <ul class="cards__list">
@@ -107,8 +113,10 @@
           </ul>
         </section>
         <section class="view">
+          <div class="view__piece">
           <h2 class="view__title">все еще сомневаетесь?</h2>
           <p class="view__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
