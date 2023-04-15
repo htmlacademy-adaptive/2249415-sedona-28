@@ -1,6 +1,5 @@
 @use "./general/fonts.scss";
 @use "./general/base.scss";
-@use "./general/variable.scss";
 @use "./general/visually-hidden.scss";
 
 @use "./blocks/page-header.scss";
@@ -25,4 +24,5 @@
 @use "./blocks-form/modal-failure.scss";
 @use "./blocks-form/page-feedback.scss";
 @use "./blocks-form/response.scss";
-
+@use "./blocks/vector.scss";
+@use "./blocks/title.scss";
