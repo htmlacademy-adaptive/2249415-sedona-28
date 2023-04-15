@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -45,10 +47,12 @@
           </a>
         </div>
       </header>
-      <main class="page-wrapper">
-        <section class="introduction">
+      <main class="page-feedback">
+        <section class="welcome">
+          <div class="welcome__backdrop">
           <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
-          <img class="introduction__plan" src="img/header/sedona.svg" width="229" height="39" alt="Седона.">
+          <img class="welcome__image" src="img/header/sedona.svg" width="229" height="39" alt="Седона.">
+          </div>
         </section>
         <section class="feedback">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
@@ -188,6 +192,20 @@
             <span class="visually-hidden">сайт академии.</span>
           </a>
         </footer>
+        <div class="modal-failure">
+          <div class="modal-failure__hide">
+            <h2 class="modal-failure__title">что-то пошло не так!</h2>
+            <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="modal-failure__btn" type="button">ок</button>
+          </div>
+        </div>
+        <div class="modal-success">
+          <div class="modal-success__hide">
+            <h2 class="modal-success__title">ваш отзыв отправлен!</h2>
+            <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            <button class="modal-success__btn" type="button">закрыть окно</button>
+          </div>
+        </div>
       </div>
     </body>
   </html>

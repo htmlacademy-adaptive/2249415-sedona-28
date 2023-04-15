@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -46,66 +48,75 @@
         </div>
       </header>
       <main class="page-wrapper">
-        <section class="introduction">
+        <section class="introduction page-wrapper__chapter">
           <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
-          <img class="introduction__plan" src="img/header/welcome-text.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+          <img class="vector-welcome" src="img/header/welcome-text.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </section>
         <section class="advantages">
           <h2 class="advantages__title">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
           <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
-        <section class="story">
-          <ul class="story__list">
-            <li class="story__item">
-              <h2 class="story__title">настоящий городок</h2>
-              <p class="story__numbering">— №1 —</p>
-              <p class="story__description">седона не аттракцион для туристов, там течет своя жизнь</p>
+        <section class="presentation">
+          <ul class="presentation__list">
+            <li class="presentation__highlights-item">
+              <div class="presentation__piece">
+                <h2 class="presentation__highlights-title">настоящий городок</h2>
+                <p class="presentation__highlights-numbering">— №1 —</p>
+                <p class="presentation__highlights-description">седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
             </li>
-            <li class="story__item">
-              <img class="story__img" src="img/main/photo-city.jpg" width="520" height="260" alt="вид на город.">
+            <li class="presentation__item">
+              <img class="presentation__img" src="img/main/photo-city.jpg" width="520" height="260" alt="вид на город.">
             </li>
-            <li class="story__item">
-              <ul class="story__items">
-                <li class="story__item">
-                  <h2 class="story__title">жилье</h2>
-                  <p class="story__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">еда</h2>
-                  <p class="story__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">сувениры</h2>
-                  <p class="story__description">не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+            <li class="presentation__item title">
+              <div class="presentation__piece">
+                <h2 class="presentation__title">жилье</h2>
+                <p class="presentation__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </li>
-            <li class="story__item">
-              <h2 class="story__title">там есть мост дьявола</h2>
-              <p class="story__numbering">— №2 —</p>
-              <p class="story__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+            <li class="presentation__item title">
+              <div class="presentation__piece">
+                <h2 class="presentation__title title__presentation">еда</h2>
+                <p class="presentation__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
-            <li class="story__item">
-              <img class="story__img" src="img/main/photo-bridge.jpg" width="520" height="260" alt="мост дьявола.">
+            <li class="presentation__item title">
+              <div class="presentation__piece">
+                <h2 class="presentation__title title__presentation">сувениры</h2>
+                <p class="presentation__description">не только китайского, но и местного производства!</p>
+              </div>
             </li>
-            <li class="story__item">
-              <ul class="story__items">
-                <li class="story__item">
-                  <h2 class="story__title">небольшая площадь</h2>
-                  <p class="story__numbering">— №3 —</p>
-                  <p class="story__description">все интересные места находятся очень близко</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">красивая дорога</h2>
-                  <p class="story__numbering">— №4 —</p>
-                  <p class="story__description">ехать в седону из лас-вегаса совсем не скучно!</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">мало туристов</h2>
-                  <p class="story__numbering">— №5 —</p>
-                  <p class="story__description">большинство едет в гранд каньон и толпится там</p>
-                </li>
-              </ul>
+            <li class="presentation__preeminence-item">
+              <div class="presentation__piece">
+                <h2 class="presentation__preeminence-title">там есть мост дьявола</h2>
+                <p class="presentation__preeminence-numbering">— №2 —</p>
+                <p class="presentation__preeminence-description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+              </div>
+            </li>
+            <li class="presentation__highlights-item">
+              <img class="presentation__img" src="img/main/photo-bridge.jpg" width="520" height="260" alt="мост дьявола.">
+            </li>
+
+            <li class="presentation__item">
+              <div class="presentation__piece">
+                <h2 class="presentation__title-rank">небольшая площадь</h2>
+                <p class="presentation__numbering">— №3 —</p>
+                <p class="presentation__description-rank">все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="presentation__item">
+              <div class="presentation__piece">
+                <h2 class="presentation__title-rank">красивая дорога</h2>
+                <p class="presentation__numbering">— №4 —</p>
+                <p class="presentation__description-rank">ехать в седону из лас-вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="presentation__item">
+              <div class="presentation__piece">
+                <h2 class="presentation__title-rank">мало туристов</h2>
+                <p class="presentation__numbering">— №5 —</p>
+                <p class="presentation__description">большинство едет в гранд каньон и толпится там</p>
+              </div>
             </li>
           </ul>
         </section>
