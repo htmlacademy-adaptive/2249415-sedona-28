@@ -1,7 +1,25 @@
 .page-wrapper__chapter {
-  background-image: url("../img/header/background-home.jpg");
+  background-image: url("../img/mobile/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-color: #81b3d2;
+  background-color: $environment-background;
   height: 389px;
 }
 
+@media (min-width: 768px) {
+  .page-wrapper__chapter {
+    background-image: url("../img/header/background-home.jpg");
+    background-repeat: no-repeat;
+    background-color: $environment-background;
+    min-height: 518px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-wrapper__chapter {
+    background-image: url("../img/header/background-home.jpg");
+    background-repeat: no-repeat;
+    background-color: $environment-background;
+    background-size: cover;
+    min-height: 518px;
+  }
+}
