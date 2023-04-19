@@ -1,10 +1,29 @@
 .welcome__backdrop {
-  background-image: url("../img/header/background-catalog.jpg");
+  background-image: url("../img/mobile/back-mobile-catalog.jpg");
   background-repeat: no-repeat;
-  background-color: #81b3d2;
+  background-color: $environment-background;
 }
 
 .welcome__image {
   margin-top: 52px;
   margin-bottom: 67px;
+}
+
+@media (min-width: 768px) {
+  .welcome__backdrop {
+    background-image: url("../img/header/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-color: $environment-background;
+    min-height: 290px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome__backdrop {
+    background-image: url("../img/header/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-color: $environment-background;
+    background-size: cover;
+    min-height: 518px;
+  }
 }
