@@ -4,6 +4,22 @@
   line-height: 1.44;
   font-weight: 700;
   margin-bottom: 33px;
+  position: relative;
+}
+
+.handset__subscribe-title {
+  display: flex;
+  margin-left: 20px;
+}
+
+.handset__feedback::after {
+  content: "";
+  position: absolute;
+  width: 120vw;
+  height: 1px;
+  background-color: $border;
+  right: -90px;
+  top: -24px;
 }
 
 .handset__subscribe-input-email {
@@ -12,7 +28,6 @@
   height: 58px;
   padding-right: 58px;
   margin-right: 0;
-  margin-left: 20px;
   margin-bottom: 16px;
   background: url("../img/form/mail.svg") center right 20px;
   background-repeat: no-repeat;
@@ -24,16 +39,21 @@
   height: 58px;
   padding-right: 58px;
   margin-right: 0;
-  margin-left: 20px;
   margin-bottom: 16px;
   background: url("../img/form/phone.svg") center right 20px;
   background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
-  .handset__subscribe-title {
-    display: flex;
-    margin-left: 20px;
+  .handset__feedback {
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.24;
+    margin-bottom: 28px;
+  }
+
+  .handset__feedback::after {
+    display: none;
   }
 
   .handset__subscribe-input-tel {
@@ -43,4 +63,15 @@
   .handset__subscribe-input-email {
     width: 295px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .handset__subscribe-input-tel {
+    width: 430px;
+  }
+
+  .handset__subscribe-input-email {
+    width: 430px;
+  }
+
 }

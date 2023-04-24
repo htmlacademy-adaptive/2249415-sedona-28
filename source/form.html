@@ -9,42 +9,49 @@
   <body class="page__body">
     <div class="page__content">
       <header class="page-header">
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="page-header__nav">
+          <nav class="main-nav main-nav--opened main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__opened" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
               <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
               <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
               </svg>
             <span class="visually-hidden">Открыть меню.</span>
+            <svg class="main-nav__closed" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 2.77477L20.0991 0L11.5 8.22522L2.9009 0L0 2.77477L8.5991 11L0 19.2252L2.9009 22L11.5 13.7748L20.0991 22L23 19.2252L14.4009 11L23 2.77477Z" fill="white"/>
+              </svg>
+            <span class="visually-hidden">Закрыть меню.</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="index.html">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
-                Фото и видео
+              <a class="site-list__link" href="catalog.html">
+                фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link site-list__link--current">
                 форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
+              <a class="site-list__link" href="https://htmlacademy.ru">
                 html academy
               </a>
             </li>
           </ul>
         </nav>
+        </nav>
         <div class="page-header__logo-image">
           <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-img" src="img/header/logo.svg" width="185" height="96" alt="Логотип Города Седона.">
           </a>
+        </div>
         </div>
       </header>
       <main class="page-feedback">
@@ -56,95 +63,98 @@
         </section>
         <section class="feedback">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
-          <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+            вами достопримечательностях</p>
         </section>
-         <form class="data page-feedback__form" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="data__container">
-          <fieldset class="data__section">
-            <legend class="data__title-legend">Представьтесь:</legend>
-            <label class="data__title" for="firstname">имя*:</label>
-            <input class="data__input" type="text" name="firstname" id="firstname" placeholder="Пётр" required>
-            <label class="data__title" for="lastname">фамилия*:</label>
-            <input class="data__input" type="text" name="lastname" id="lastname" placeholder="Пустота" required>
-            <label class="data__title" for="patronymic">отчество:</label>
-            <input class="data__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович" required>
-          </fieldset>
-          <fieldset class="data__feedback handset">
-            <legend class="handset__feedback">Контактная информация:</legend>
-            <label class="handset__subscribe-title" for="phone">контактный телефон*:</label>
-            <input class="handset__subscribe-input-tel" type="tel" name="phone" id="phone" placeholder="Введите телефон"
-              required>
-            <label class="handset__subscribe-title" for="email">Электронная почта*:</label>
-            <input class="handset__subscribe-input-email" type="email" name="email" id="email" placeholder="Введите e-mail"
-              required>
-          </fieldset>
-          <fieldset class="data__feedback response ">
-            <legend class="data__title">ваше общее впечатление:</legend>
-            <ul class="response__list">
-              <li class="response__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="accomodation-radio" checked>
-                  <span class="control__mark"></span>
-                  <span class="control__label">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="response__item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="accomodation-radio">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="response__item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="accomodation-radio">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="data__feedback choice">
-            <legend class="data__title">посещенные достопримечательности:</legend>
-            <ul class="choice__list">
-              <li class="choice__item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="devil's-bridge" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
-                </label>
-              </li>
-              <li class="choice__item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="mount-bell" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="choice__item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="choice__item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="data__feedback">
-            <legend class="data__title">опишите свои эмоции:</legend>
-            <textarea class="data__textbox-input" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
-          <fieldset class="data__feedback">
-            <input class="btn" type="submit" value="отправить отзыв">
-            <span class="data__send">* — обязательные поля</span>
-          </fieldset>
+        <form class="data page-feedback__form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="data__container">
+            <fieldset class="data__section">
+              <legend class="data__title-legend">Представьтесь:</legend>
+              <label class="data__title" for="firstname">имя*:</label>
+              <input class="data__input" type="text" name="firstname" id="firstname" placeholder="Пётр" required>
+              <label class="data__title" for="lastname">фамилия*:</label>
+              <input class="data__input" type="text" name="lastname" id="lastname" placeholder="Пустота" required>
+              <label class="data__title" for="patronymic">отчество:</label>
+              <input class="data__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович" required>
+            </fieldset>
+            <fieldset class="data__feedback handset">
+              <legend class="handset__feedback">Контактная информация:</legend>
+              <label class="handset__subscribe-title" for="phone">контактный телефон*:</label>
+              <input class="handset__subscribe-input-tel" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                required>
+              <label class="handset__subscribe-title" for="email">Электронная почта*:</label>
+              <input class="handset__subscribe-input-email" type="email" name="email" id="email"
+                placeholder="Введите e-mail" required>
+            </fieldset>
+            <fieldset class="data__feedback response">
+              <legend class="data__title-legend">ваше общее впечатление:</legend>
+              <ul class="response__list">
+                <li class="response__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="accomodation-radio" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="response__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="accomodation-radio">
+                    <span class="control__mark"></span>
+                    <span class="control__label">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li class="response__item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="accomodation-radio">
+                    <span class="control__mark"></span>
+                    <span class="control__label">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="data__feedback choice">
+              <legend class="data__title-legend">посещенные достопримечательности:</legend>
+              <ul class="choice__list">
+                <li class="choice__item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="devil's-bridge" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="choice__item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="mount-bell" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="choice__item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="choice__item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
+                    <span class="control__mark"></span>
+                    <span class="control__label">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="data__feedback">
+              <legend class="data__title-legend">опишите свои эмоции:</legend>
+              <textarea class="data__textbox-input" name="emotions" id="emotions"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+            <fieldset class="data__feedback">
+              <input class="data__btn" type="submit" value="отправить отзыв">
+              <span class="data__send">* — обязательные поля</span>
+            </fieldset>
+          </div>
         </form>
       </main>
       <footer class="page-footer">
@@ -214,5 +224,6 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </body>
   </html>
