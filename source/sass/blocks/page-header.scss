@@ -2,24 +2,20 @@
   height: 56px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-header__nav {
     position: relative;
   }
 
   .page-header__logo-image {
-    display: block;
     position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    margin-left: -92.5px;
+    top: 0px;
+    right: 291.5px;
   }
 }
 
 @media (min-width: 1200px) {
-  .page-header__nav {
-    position: relative;
+  .page-header__logo-image {
+    right: 507.5px;
   }
-
 }
