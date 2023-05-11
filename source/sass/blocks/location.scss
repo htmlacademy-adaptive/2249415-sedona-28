@@ -4,14 +4,6 @@
 
 @media (min-width: $tablet-width) {
   .location__map {
-    width: 768px;
     margin-top: 55px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .location__map {
-    width: 1200px;
-    margin-top: 66px;
   }
 }

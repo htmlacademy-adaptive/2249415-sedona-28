@@ -1,5 +1,6 @@
 .presentation__item {
   list-style: none;
+  display: inline-block;
 }
 
 .presentation__item:nth-child(n+6) {
@@ -10,34 +11,41 @@
 .presentation__highlights-title {
   color: $color-main;
   padding-top: 54px;
-  margin-bottom: 11px;
+  padding-bottom: 11px;
   font-size: 18px;
   line-height: 1.44;
+  margin: 0;
 }
 
 .presentation__highlights-numbering {
   color: $color-main;
-  margin-bottom: 17px;
+  padding-bottom: 17px;
+  margin: 0;
 }
 
 .presentation__highlights-description {
   color: $color-main;
-  margin-bottom: 37px;
-  margin-bottom: 0;
+  padding-bottom: 37px;
+  margin: 0;
 }
 
 .presentation__preeminence-img,
 .presentation__highlights-item {
   background-color: $environment-background;
   list-style: none;
-  min-height: 211px;
+  height: 256px;
 }
 
 .presentation__highlights-img,
 .presentation__preeminence-item {
   background-color: $environment-background;
   list-style: none;
-  min-height: 211px;
+  height: 256px;
+}
+
+.presentation__img {
+  width: 100%;
+  height: 260px;
 }
 
 .presentation__preeminence-title {
@@ -65,14 +73,16 @@
 
 .presentation__list {
   outline: $outline;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: $background-main;
+  display: flex;
+  flex-direction: column;
 }
 
 .presentation__items {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .presentation__title {
@@ -80,10 +90,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
-  margin-top: 31px;
-  margin-bottom: 16px;
-  text-align: start;
+  padding-top: 31px;
+  padding-bottom: 16px;
   padding-left: 47px;
+  text-align: start;
   margin: 0;
 }
 
@@ -104,10 +114,6 @@
   border-bottom: 1px solid #d6d6d6;
 }
 
-.presentation__description-last {
-  padding: 20px 18px 49px 18px;
-}
-
 .presentation__piece {
   padding: 0 18px;
   margin: 0;
@@ -119,28 +125,87 @@
 }
 
 .presentation__item--house {
-  background: url("../img/main/house.svg");
+  background-image: url("../img/mobile/icon/icon-house.svg");
   background-repeat: no-repeat;
   background-position: top 23px left 18px;
 }
 
 .presentation__item--burger {
-  background: url("../img/main/burger.svg");
+  background-image: url("../img/mobile/icon/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: top 23px left 18px;
 }
 
 .presentation__item--gift {
-  background: url("../img/main/gift.svg");
+  background-image: url("../img/mobile/icon/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: top 23px left 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .presentation__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 768px;
+  }
+
+  .presentation__piece {
+    padding: 0 18px;
+  }
+
+  .presentation__highlights-item {
+    grid-column: 1/2;
+    min-height: 256px;
+  }
+
+  .presentation__highlights-img {
+    grid-column: 2/4;
+  }
+
+  .presentation__highlights-img img {
+    width: 100%;
+    height: 256px;
+  }
+
+  .presentation__preeminence-item {
+    grid-column: 3/4;
+    min-height: 256px;
+  }
+
+  .presentation__preeminence-img {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .presentation__preeminence-img img {
+    width: 100%;
+    height: 256px;
+  }
+
+  .presentation__title {
+    text-align: center;
+    padding: 0;
+  }
+
+  .presentation__description {
+    text-align: center;
+    padding: 0;
+  }
+
+  .presentation__description-rank {
+    border: none;
+  }
+
+  .presentation__description-last {
+    padding: 20px 18px 49px 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .presentation__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: $tablet-width;
+    max-width: 1200px;
   }
 
   .presentation__highlights-item {
@@ -164,54 +229,12 @@
 
   .presentation__title {
     text-align: center;
-    padding: 0 0 34px 0;
-  }
-
-  .presentation__benefit {
-    padding: 158px 33px 60px;
+    padding: 0;
   }
 
   .presentation__description {
     text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .presentation__preeminence-description {
-    padding: 0 33px 37px;
-  }
-
-  .presentation__title-rank {
-    padding: 44px 44px 15px;
-    margin: 0;
-  }
-
-  .presentation__description-rank {
-    padding: 33px 15px 60px;
-    border: none;
-  }
-
-  .presentation__description-last {
-    padding: 33px 15px 60px;
-  }
-
-  .presentation__item {
-    min-height: 256px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .presentation__list {
-    width: $desktop-width;
-  }
-
-  .presentation__title {
-    text-align: center;
-    padding: 170px 50px 30px;
-  }
-
-  .presentation__benefit {
-    padding: 0;
+    padding: 0 50px 69px;
   }
 
   .presentation__item {
@@ -238,10 +261,6 @@
   }
 
   .presentation__highlights-description:nth-child(n+2) {
-    padding: 0 50px 69px;
-  }
-
-  .presentation__description {
     padding: 0 50px 69px;
   }
 

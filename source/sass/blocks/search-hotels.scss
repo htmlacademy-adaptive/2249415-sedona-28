@@ -16,7 +16,8 @@
 .search-hotels__button {
   background-color: $environment-background;
   display: block;
-  width: 284px;
+  min-width: 284px;
+  max-width: 458px;
   font-weight: 700;
   padding: 16px 49px;
   color: $color-main;
