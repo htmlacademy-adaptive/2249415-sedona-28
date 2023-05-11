@@ -2,13 +2,15 @@
   list-style: none;
   width: 156px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
-  margin-left: 82px;
-  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-top: 36px;
 }
 
 .social__item {
-  justify-content: space-betweens;
   margin-right: 6px;
 }
 

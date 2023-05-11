@@ -7,16 +7,17 @@
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 body {
   color: $color-paragraph;
   background-color: $background-main;
   min-width: 320px;
-  margin: 0;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 1.50;
+  line-height: 1.5;
+  margin: 0 auto;
 }
