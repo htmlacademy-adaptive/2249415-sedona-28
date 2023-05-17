@@ -1,3 +1,7 @@
+.page-wrapper {
+  flex-grow: 1;
+}
+
 .page-wrapper__chapter {
   background-image: url("../img/mobile/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -11,12 +15,12 @@
   position: absolute;
   content: "";
   background-image: url("../img/mobile/zig-zag.svg");
+  background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
   top: 362px;
   right: 50%;
   transform: translate(50%, -50%);
-  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
