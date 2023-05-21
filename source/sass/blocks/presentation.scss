@@ -128,7 +128,7 @@
 .presentation__item--house {
   &::after {
     content: "";
-    background-image: url("../img/mobile/icon/icon-house.svg");
+    background-image: url("../img/mobile/icon-house.svg");
     position: absolute;
     width: 40px;
     height: 38px;
@@ -142,7 +142,7 @@
 .presentation__item--burger {
   &::after {
     content: "";
-    background-image: url("../img/mobile/icon/icon-burger.svg");
+    background-image: url("../img/mobile/icon-burger.svg");
     position: absolute;
     width: 40px;
     height: 36px;
@@ -156,7 +156,7 @@
 .presentation__item--gift {
   &::after {
     content: "";
-    background-image: url("../img/mobile/icon/icon-gift.svg");
+    background-image: url("../img/mobile/icon-gift.svg");
     position: absolute;
     width: 40px;
     height: 40px;
@@ -183,8 +183,11 @@
     height: 256px;
   }
 
-  .presentation__highlights-img img {
+  .presentation__highlights-img {
     grid-column: 2/4;
+  }
+
+  .presentation__highlights-img img {
     width: 100%;
     height: 256px;
   }
@@ -294,11 +297,6 @@
     padding: 0;
   }
 
-  .presentation__description {
-    text-align: center;
-    padding: 0 50px 69px;
-  }
-
   .presentation__item {
     min-height: 330px;
   }
@@ -328,6 +326,13 @@
   .presentation__highlights-description:nth-child(n+2) {
     padding: 0 50px 69px;
   }
+
+
+  .presentation__description {
+    text-align: center;
+    padding: 0 50px 69px;
+  }
+
 
   .presentation__preeminence-title {
     padding: 52px 60px 22px;

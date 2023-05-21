@@ -65,11 +65,11 @@
 @media (min-width: $desktop-width) {
   .welcome__backdrop {
     background-size: cover;
-    min-height: 518px;
+    min-height: 302px;
   }
 
   .welcome__backdrop::before {
-    top: 490px;
+    top: 274px;
   }
 }
 
@@ -95,7 +95,7 @@
   }
 
   .welcome__backdrop-form::before {
-    top: 329px;
+    top: 274px;
   }
 }
 
@@ -105,6 +105,6 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: $environment-background;
-    min-height: 357px;
+    min-height: 302px;
   }
 }
