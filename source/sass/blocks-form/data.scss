@@ -208,6 +208,11 @@
     padding: 0 120px;
   }
 
+  .data__btn {
+    width: 384px;
+    margin-left: 96px;
+  }
+
   .data__input {
     width: 430px;
   }
@@ -246,10 +251,5 @@
 
   .data__feedback:nth-child(2) {
     margin-left: 49.5px;
-  }
-
-  .data__btn {
-    margin-left: 96px;
-    width: 324px;
   }
 }
