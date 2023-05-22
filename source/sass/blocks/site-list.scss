@@ -1,6 +1,6 @@
 .site-list__item {
   list-style: none;
-  width: 320px;
+  min-width: 320px;
   height: 55px;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@
   line-height: 1.44;
   text-decoration: none;
   font-weight: 700;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 12px;
   text-transform: uppercase;
   border-top: 1px solid #9ac2db;
@@ -38,7 +38,7 @@
   }
 
   .site-list__item {
-    width: 153px;
+    min-width: 153px;
     border: none;
   }
 
@@ -53,7 +53,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    width: 240px;
+    min-width: 240px;
   }
 
   .site-list__item:nth-child(2n+2) {
