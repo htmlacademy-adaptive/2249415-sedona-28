@@ -6,6 +6,7 @@
   padding: 0;
   background-color: $environment-background;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .main-nav__toggle {
@@ -13,7 +14,7 @@
   display: block;
   right: 20px;
   z-index: 2;
-  top: 17px;
+  top: 15px;
   padding: 0;
   border: none;
   cursor: pointer;
