@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="preload">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -23,24 +25,24 @@
               </svg>
               <span class="visually-hidden">Закрыть меню.</span>
             </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+          <ul class="main-nav__list header-list">
+            <li class="header-list__item">
+              <a class="header-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+            <li class="header-list__item">
+              <a class="header-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">
+            <li class="header-list__item">
+              <a class="header-list__link header-list__link--current">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru">
+            <li class="header-list__item">
+              <a class="header-list__link" href="https://htmlacademy.ru">
                 html academy
               </a>
             </li>
@@ -110,31 +112,31 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="data__feedback choice">
+            <fieldset class="data__feedback selection">
               <legend class="data__title-legend data__title-legend--attractions">посещенные достопримечательности:</legend>
-              <ul class="choice__list">
-                <li class="choice__item">
+              <ul class="selection__list">
+                <li class="selection__item">
                   <label class="control">
                     <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="choice__item">
+                <li class="selection__item">
                   <label class="control">
                     <input class="visually-hidden control__input" type="checkbox" name="mount-bell" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="choice__item">
+                <li class="selection__item">
                   <label class="control">
                     <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="choice__item">
+                <li class="selection__item">
                   <label class="control">
                     <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
                     <span class="control__mark"></span>
@@ -187,8 +189,7 @@
           </ul>
         </div>
         <div class="page-footer__academy">
-          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
-            Разработано
+          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/"> Разработано
             <svg class="page-footer__social-academy" width="27" height="35">
               <use href="img/sprite.svg#icon-academy"></use>
             </svg>

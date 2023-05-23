@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="preload">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -23,24 +25,24 @@
             </svg>
             <span class="visually-hidden">Закрыть меню.</span>
           </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+          <ul class="main-nav__list header-list">
+            <li class="header-list__item">
+              <a class="header-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">
+            <li class="header-list__item">
+              <a class="header-list__link header-list__link--current">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="header-list__item">
+              <a class="header-list__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru">
+            <li class="header-list__item">
+              <a class="header-list__link" href="https://htmlacademy.ru">
                 html academy
               </a>
             </li>
@@ -66,97 +68,133 @@
           <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
         </section>
-        <section class="cards">
-          <ul class="cards__list">
-            <li class="cards__item cards__item--big">
-              <a class="cards__link" href="#">
+        <section class="gallery">
+          <ul class="gallery__list">
+            <li class="gallery__item gallery__item--big">
+              <a class="gallery__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/gallery/gallery1.webp 1x, img/desktop/gallery/gallery1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/gallery/gallery1.webp 1x, img/tablet/gallery/gallery1@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/gallery/gallery1.webp 1x, img/mobile/gallery/gallery1@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="img/desktop/cards/cards1.jpg 1x, img/desktop/cards/cards1@2x.jpg 2x">
+                    srcset="img/desktop/gallery/gallery1.jpg 1x, img/desktop/gallery/gallery1@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="img/tablet/cards/cards1.jpg 1x, img/tablet/cards/cards1@2x.jpg 2x">
-                  <img class="cards__images" src="img/mobile/cards/cards1.jpg" srcset="img/mobile/cards/cards1@2x.jpg 2x"
+                    srcset="img/tablet/gallery/gallery1.jpg 1x, img/tablet/gallery/gallery1@2x.jpg 2x">
+                  <img class="gallery__images" src="img/mobile/gallery/gallery1.jpg" srcset="img/mobile/gallery/gallery1@2x.jpg 2x"
                     width="280" height="280" alt="открытые просторы.">
                 </picture>
               </a>
-              <div class="cards__folder cards__folder--big">
-                <div class="cards__creator-blok">
-                  <h3 class="cards__title cards__title--big">Неродные просторы</h3>
-                  <p class="cards__creator cards__creator--big">Автор фото: Борис</p>
+              <div class="gallery__folder gallery__folder--big">
+                <div class="gallery__creator-blok">
+                  <h3 class="gallery__title gallery__title--big">Неродные просторы</h3>
+                  <p class="gallery__creator gallery__creator--big">Автор фото: Борис</p>
                 </div>
-                <div class="cards__block">
-                  <svg class="cards__like" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  <span class="visually-hidden">Лайк.</span>
-                  <p class="cards__link-text">1350</p>
+                <div class="gallery__block">
+                  <svg class="gallery__like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"
+                  opacity=".3" viewBox="0 0 23 21">
+                  <path
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                </svg>
+                <span class="visually-hidden">Лайк.</span>
+                  <p class="gallery__link-text">1350</p>
                 </div>
               </div>
             </li>
-            <li class="cards__item">
-              <a class="cards__link" href="#">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/gallery/gallery2.webp 1x, img/desktop/gallery/gallery2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/gallery/gallery2.webp 1x, img/tablet/gallery/gallery2@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/gallery/gallery2.webp 1x, img/mobile/gallery/gallery2@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="img/desktop/cards/cards2.jpg 1x, img/desktop/cards/cards2@2x.jpg 2x">
+                    srcset="img/desktop/gallery/gallery2.jpg 1x, img/desktop/gallery/gallery2@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="img/tablet/cards/cards2.jpg 1x, img/tablet/cards/cards2@2x.jpg 2x">
-                  <img class="cards__images" src="img/mobile/cards/cards2.jpg" srcset="img/mobile/cards/cards2@2x.jpg 2x"
+                    srcset="img/tablet/gallery/gallery2.jpg 1x, img/tablet/gallery/gallery2@2x.jpg 2x">
+                  <img class="gallery__images" src="img/mobile/gallery/gallery2.jpg" srcset="img/mobile/gallery/gallery2@2x.jpg 2x"
                     width="280" height="280" alt="местная трава.">
                 </picture>
               </a>
-              <div class="cards__folder">
-                <div class="cards__creator-block">
-                  <h3 class="cards__title">Местная растительность</h3>
-                  <p class="cards__creator">Автор фото: Сергей</p>
+              <div class="gallery__folder">
+                <div class="gallery__creator-block">
+                  <h3 class="gallery__title">Местная растительность</h3>
+                  <p class="gallery__creator">Автор фото: Сергей</p>
                 </div>
-                <div class="cards__block">
-                  <svg class="cards__like" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  <span class="visually-hidden">Лайк.</span>
-                  <p class="cards__link-text">143</p>
+                <div class="gallery__block">
+                  <svg class="gallery__like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"
+                  opacity=".3" viewBox="0 0 23 21">
+                  <path
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                </svg>
+                <span class="visually-hidden">Лайк.</span>
+                  <p class="gallery__link-text">143</p>
                 </div>
               </div>
             </li>
-            <li class="cards__item">
-              <a class="cards__link" href="#">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/gallery/gallery3.webp 1x, img/desktop/gallery/gallery3@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/gallery/gallery3.webp 1x, img/tablet/gallery/gallery3@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/gallery/gallery3.webp 1x, img/mobile/gallery/gallery3@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="img/desktop/cards/cards3.jpg 1x, img/desktop/cards/cards3@2x.jpg 2x">
+                    srcset="img/desktop/gallery/gallery3.jpg 1x, img/desktop/gallery/gallery3@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="img/tablet/cards/cards3.jpg 1x, img/tablet/cards/cards3@2x.jpg 2x">
-                  <img class="cards__images" src="img/mobile/cards/cards3.jpg" srcset="img/mobile/cards/cards3@2x.jpg 2x"
+                    srcset="img/tablet/gallery/gallery3.jpg 1x, img/tablet/gallery/gallery3@2x.jpg 2x">
+                  <img class="gallery__images" src="img/mobile/gallery/gallery3.jpg" srcset="img/mobile/gallery/gallery3@2x.jpg 2x"
                     width="280" height="280" alt="дорога в лесу.">
                 </picture>
               </a>
-              <div class="cards__folder">
-                <div class="cards__creator-block">
-                  <h3 class="cards__title">Дорога на север</h3>
-                  <p class="cards__creator">Автор фото: Петр</p>
+              <div class="gallery__folder">
+                <div class="gallery__creator-block">
+                  <h3 class="gallery__title">дорога на север</h3>
+                  <p class="gallery__creator">Автор фото: Петр</p>
                 </div>
-                <div class="cards__block">
-                  <svg class="cards__like" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  <span class="visually-hidden">Лайк.</span>
-                  <p class="cards__link-text">96</p>
+                <div class="gallery__block">
+                  <svg class="gallery__like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"
+                  opacity=".3" viewBox="0 0 23 21">
+                  <path
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                </svg>
+                <span class="visually-hidden">Лайк.</span>
+                  <p class="gallery__link-text">96</p>
                 </div>
               </div>
             </li>
-            <li class="cards__item">
-              <a class="cards__link" href="#">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/gallery/gallery4.webp 1x, img/desktop/gallery/gallery4@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/gallery/gallery4.webp 1x, img/tablet/gallery/gallery4@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/gallery/gallery4.webp 1x, img/mobile/gallery/gallery4@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="img/desktop/cards/cards4.jpg 1x, img/desktop/cards/cards4@2x.jpg 2x">
+                    srcset="img/desktop/gallery/gallery4.jpg 1x, img/desktop/gallery/gallery4@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="img/tablet/cards/cards4.jpg 1x, img/tablet/cards/cards4@2x.jpg 2x">
-                  <img class="cards__images" src="img/mobile/cards/cards4.jpg" srcset="img/mobile/cards/cards4@2x.jpg 2x"
-                    width="280" height="280" alt="Каньон.">
+                    srcset="img/tablet/gallery/gallery4.jpg 1x, img/tablet/gallery/gallery4@2x.jpg 2x">
+                  <img class="gallery__images" src="img/mobile/gallery/gallery4.jpg" srcset="img/mobile/gallery/gallery4@2x.jpg 2x"
+                    width="280" height="280" alt="каньон.">
                 </picture>
               </a>
-              <div class="cards__folder">
-                <div class="cards__creator-blok">
-                  <h3 class="cards__title">Мост дьявола</h3>
-                  <p class="cards__creator">Автор фото: Антон</p>
+              <div class="gallery__folder">
+                <div class="gallery__creator-blok">
+                  <h3 class="gallery__title">Мост дьявола</h3>
+                  <p class="gallery__creator">Автор фото: Антон</p>
                 </div>
-                <div class="cards__block">
-                  <svg class="cards__like" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  <span class="visually-hidden">Лайк.</span>
-                  <p class="cards__link-text">254</p>
+                <div class="gallery__block">
+                  <svg class="gallery__like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"
+                  opacity=".3" viewBox="0 0 23 21">
+                  <path
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                </svg>
+                <span class="visually-hidden">Лайк.</span>
+                  <p class="gallery__link-text">254</p>
                 </div>
               </div>
             </li>
@@ -170,13 +208,19 @@
           <div class="view__presentation">
             <picture>
               <source media="(min-width: 1200px)"
+                srcset="img/desktop/video-desktop.webp 1x, img/desktop/video-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/tablet/video-desktop.webp 1x, img/tablet/video-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/video-mobile.webp 1x, img/mobile/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
                 srcset="img/desktop/video-desktop.jpg 1x, img/desktop/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/tablet/video-desktop.jpg 1x, img/tablet/video-desktop@2x.jpg 2x">
               <img src="img/mobile/video-mobile.jpg" srcset="img/mobile/video-mobile@2x.jpg 2x" width="280" height="177"
                 alt="видеопрезентация.">
             </picture>
-            <button class="view__presentation--play" type="button"></button>
+            <button class="view__play" type="button"><span class="visually-hidden">включить
+              воспроизведение.</span></button>
           </div>
         </section>
       <footer class="page-footer">
@@ -211,8 +255,7 @@
           </ul>
         </div>
         <div class="page-footer__academy">
-          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
-            Разработано
+          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/"> разработано
             <svg class="page-footer__social-academy" width="27" height="35">
               <use href="img/sprite.svg#icon-academy"></use>
             </svg>

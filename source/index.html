@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="preload">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -37,24 +38,24 @@
               </svg>
               <span class="visually-hidden">Закрыть меню.</span>
             </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--current" href="#">
+          <ul class="main-nav__list header-list">
+            <li class="header-list__item">
+              <a class="header-list__link header-list__link--current" href="#">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+            <li class="header-list__item">
+              <a class="header-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="header-list__item">
+              <a class="header-list__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru">
+            <li class="header-list__item">
+              <a class="header-list__link" href="https://htmlacademy.ru">
                 html academy
               </a>
             </li>
@@ -68,9 +69,9 @@
         </div>
       </header>
       <main class="page-wrapper">
-        <section class="introduction page-wrapper__chapter">
+        <section class="entry page-wrapper__chapter">
           <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
-          <img class="introduction__plan" src="img/mobile/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+          <img class="entry__plan" src="img/mobile/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </section>
         <section class="advantages advantages--ladder">
           <h2 class="advantages__title">Седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
@@ -87,6 +88,11 @@
           </li>
           <li class="presentation__highlights-img">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/desktop/hotel.webp 1x, img/desktop/hotel@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/tablet/hotel.webp 1x, img/tablet/hotel@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/hotel.webp 1x, img/mobile/hotel@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/desktop/hotel.jpg 1x, img/desktop/hotel@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/hotel.jpg 1x, img/tablet/hotel@2x.jpg 2x">
               <img class="presentation__img" src="img/mobile/hotel.jpg" srcset="img/mobile/hotel@2x.jpg 2x" width="320"
@@ -108,7 +114,8 @@
           <li class="presentation__item title presentation__item--gift">
             <div class="presentation__benefit">
               <h2 class="presentation__title presentation__title--gift">Сувениры</h2>
-              <p class="presentation__description presentation__description--gift">Не только китайского, но и местного производства!</p>
+              <p class="presentation__description presentation__description--gift">Не только китайского,  но и местного производства!
+              </p>
             </div>
           </li>
           <li class="presentation__preeminence-item">
@@ -120,6 +127,11 @@
           </li>
           <li class="presentation__preeminence-img">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/desktop/bridge.webp 1x, img/desktop/bridge@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/tablet/bridge.webp 1x, img/tablet/bridge@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/bridge.webp 1x, img/mobile/bridge@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/desktop/bridge.jpg 1x, img/desktop/bridge@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/bridge.jpg 1x, img/tablet/bridge@2x.jpg 2x">
               <img class="presentation__img" src="img/mobile/bridge.jpg" srcset="img/mobile/bridge@2x.jpg 2x" width="320"
@@ -159,11 +171,25 @@
         <section class="location">
           <h2 class="visually-hidden">Местоположение седоны.</h2>
           <iframe class="location__map" title="myFrame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937305.241858962!2d-113.27109879541032!3d34.830669755307746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681286371411!5m2!1sru!2sru"
-            width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </section>
-      </main>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937305.241858962!2d-113.27109879541032!3d34.830669755307746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681286371411!5m2!1sru!2sru"
+          width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <noscript class="location__nojs">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/desktop/map-desktop.webp 1x, img/desktop/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/tablet/map-tablet.webp 1x, img/tablet/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/mobile/map-mobile.webp 1x, img/mobile/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/desktop/map-desktop.jpg 1x, img/desktop/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet/map-tablet.jpg 1x, img/tablet/map-tablet@2x.jpg 2x">
+            <img class="location__map-nojs" src="img/mobile/map-mobile.jpg" srcset="img/mobile/map-mobile@2x.jpg 2x" width="320"
+              height="350" alt="карта местоположение.">
+          </picture>
+        </noscript>
+      </section>
+    </main>
       <footer class="page-footer">
         <div class="page-footer__connection">
           <p class="page-footer__hashtag">#visitsedona</p>
@@ -196,8 +222,7 @@
           </ul>
         </div>
         <div class="page-footer__academy">
-          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
-            Разработано
+          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/"> Разработано
             <svg class="page-footer__social-academy" width="27" height="35">
               <use href="img/sprite.svg#icon-academy"></use>
           </svg>
