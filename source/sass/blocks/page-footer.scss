@@ -1,0 +1,133 @@
+.page-footer__connection {
+  min-height: 235px;
+}
+
+.page-footer__hashtag {
+  color: $color-title;
+  font-size: 21px;
+  line-height: 1.24;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+
+.page-footer__academy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__HTML-academy {
+  color: $color-title;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-footer__HTML-academy:hover,
+.page-footer__social-academy:hover {
+  color: $environment-background;
+}
+
+.page-footer__HTML-academy:active,
+.page-footer__social-academy:active {
+  color: #b3b3b3;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__hashtag {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: 34px;
+  }
+
+  .page-footer__academy {
+    margin-right: 60px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__hashtag {
+    margin-left: 120px;
+    margin-top: 52px;
+  }
+
+  .page-footer__academy {
+    margin-right: 120px;
+    margin-top: 19px;
+  }
+}
+
+.page-footer__connection--index {
+  height: 200px;
+}
+
+.page-footer__connection--catalog {
+  height: 200px;
+}
+
+.page-footer__connection--form {
+  height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__connection--index {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 58px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__connection--catalog {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: -67px;
+    margin-bottom: 56px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__connection--form {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: 3px;
+    margin-bottom: 58px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__connection--index {
+    height: 120px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__connection--catalog {
+    height: 120px;
+    margin-top: -11px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__connection--form {
+    height: 120px;
+    margin-top: -7px;
+    margin-bottom: 6px;
+  }
+}
