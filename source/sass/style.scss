@@ -3,6 +3,7 @@
 @import "./general/fonts.scss";
 @import "./general/base.scss";
 @import "./general/visually-hidden.scss";
+@import "./general/mixins.scss";
 // блоки
 @import "./blocks/advantages.scss";
 @import "./blocks/entry.scss";
@@ -21,11 +22,8 @@
 @import "./blocks-catalog/view.scss";
 @import "./blocks-catalog/welcome.scss";
 @import "./blocks-form/selection.scss";
-@import "./blocks-form/control.scss";
 @import "./blocks-form/data.scss";
 @import "./blocks-form/feedback.scss";
-@import "./blocks-form/handset.scss";
 @import "./blocks-form/modal-failure.scss";
 @import "./blocks-form/modal-success.scss";
 @import "./blocks-form/page-feedback.scss";
-@import "./blocks-form/response.scss";

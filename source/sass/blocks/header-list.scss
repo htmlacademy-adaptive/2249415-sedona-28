@@ -17,16 +17,16 @@
   padding-top: 18px;
   padding-bottom: 12px;
   text-transform: uppercase;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .header-list__link:hover {
-  color: $color-hover;
+  background-color: #669ec0;
 }
 
 .header-list__link:active {
-  color: $color-active;
+  background-color: #5496bd;
+  opacity: 30%;
 }
 
 .header-list__link:last-child {
@@ -39,10 +39,30 @@
     font-size: 14px;
     line-height: 1.5;
     border: none;
+    box-shadow: none;
+  }
+
+  .header-list__link:hover {
+    background-color: #ffffff;
+    color: $color-hover;
+  }
+
+  .header-list__link:active {
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 30%;
   }
 
   .header-list__link--current {
     color: #766357;
+  }
+
+  .header-list__link--current:hover {
+    color: #766357;
+  }
+
+  .header-list__link--current:active {
+    opacity: 100%;
   }
 
   .header-list__item {

@@ -13,6 +13,7 @@
 
 .social__item {
   margin-right: 6px;
+  overflow: hidden;
 }
 
 .social__link {
@@ -66,7 +67,14 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    margin-left: 0;
-    margin-top: 30px;
+    margin-left: 6px;
+    margin-top: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-left: 8px;
+    margin-top: 44px;
   }
 }
