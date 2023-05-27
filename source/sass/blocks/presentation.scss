@@ -98,7 +98,6 @@
 
 .presentation__title {
   color: $color-title;
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
   padding-top: 31px;
@@ -280,7 +279,7 @@
   .presentation__preeminence-title {
     font-size: 21px;
     line-height: 1.24;
-    padding: 52px 36px 14px 35px;
+    padding: 52px 35px 14px 35px;
   }
 
   .presentation__preeminence-description {
@@ -352,6 +351,7 @@
 
 @media (min-width: $desktop-width) {
   .presentation__piece {
+    background-size: cover;
     padding: 0;
   }
 
@@ -367,6 +367,7 @@
   }
 
   .presentation__highlights-img {
+    background-color: $environment-background;
     grid-column: 2/4;
   }
 
@@ -376,6 +377,7 @@
   }
 
   .presentation__preeminence-img {
+    background-color: $environment-background;
     grid-column: 1/3;
     grid-row: 3/4;
   }
@@ -398,7 +400,8 @@
   }
 
   .presentation__description--gift {
-    padding: 23px 53px 20px 83px;
+    padding: 23px 59px 20px 73px;
+    margin-right: 16px;
   }
 
   .presentation__item {
@@ -444,7 +447,7 @@
 
 
   .presentation__preeminence-title {
-    padding: 53px 130px 13px 121px;
+    padding: 53px 125px 13px 124px;
     margin: 0;
   }
 

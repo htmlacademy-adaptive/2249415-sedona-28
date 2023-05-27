@@ -1,3 +1,7 @@
+.page-footer__connection {
+  min-height: 235px;
+}
+
 .page-footer__hashtag {
   color: $color-title;
   font-size: 21px;
@@ -34,35 +38,96 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__connection {
+  .page-footer__hashtag {
     display: flex;
     justify-content: space-between;
-    min-height: 116px;
-  }
-
-  .page-footer__hashtag {
     margin-left: 60px;
-    margin-top: 23px;
-    align-self: center;
+    margin-top: 34px;
   }
 
   .page-footer__academy {
     margin-right: 60px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__hashtag {
+    margin-left: 120px;
+    margin-top: 52px;
+  }
+
+  .page-footer__academy {
+    margin-right: 120px;
+    margin-top: 19px;
+  }
+}
+
+.page-footer__connection--index {
+  height: 200px;
+}
+
+.page-footer__connection--catalog {
+  height: 200px;
+}
+
+.page-footer__connection--form {
+  height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__connection--index {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 58px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__connection--catalog {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: -67px;
+    margin-bottom: 56px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__connection--form {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: 3px;
+    margin-bottom: 58px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__connection--index {
+    height: 120px;
+    margin-top: 3px;
     margin-bottom: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__connection {
-    min-height: 120px;
+  .page-footer__connection--catalog {
+    height: 120px;
+    margin-top: -11px;
+    margin-bottom: 6px;
   }
+}
 
-  .page-footer__hashtag {
-    margin-left: 120px;
-  }
-
-  .page-footer__academy {
-    margin-right: 120px;
-    margin-bottom: 10px;
+@media (min-width: $desktop-width) {
+  .page-footer__connection--form {
+    height: 120px;
+    margin-top: -7px;
+    margin-bottom: 6px;
   }
 }

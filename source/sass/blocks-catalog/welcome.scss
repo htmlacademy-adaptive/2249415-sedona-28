@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .welcome__backdrop {
-    background-image: url("../img/desktop/back-desktop.jpg");
+    background-image: url("../img/desktop/back-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-color: $environment-background;
@@ -60,7 +60,7 @@
 
 @media (min-resolution: 2dppx) {
   .welcome__backdrop {
-    background-image: url("../img/desktop/back-desktop@2x.jpg");
+    background-image: url("../img/desktop/back-desktop.jpg");
   }
 }
 
