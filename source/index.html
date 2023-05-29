@@ -72,11 +72,13 @@
         </div>
       </header>
       <main class="page-wrapper">
-        <section class="entry page-wrapper__chapter">
-          <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
-          <img class="entry__plan" src="img/mobile/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
-        </section>
-        <section class="advantages advantages--ladder">
+        <section class="welcome">
+          <h1 class="visually-hidden">
+              Sedona Gorgeus City in Arizona
+          </h1>
+          <img src="img/mobile/welcome.svg" alt="Welcome to Sedona" class="welcome__img" width="282" height="214">
+      </section>
+      <section class="advantages advantages--ladder">
           <h2 class="advantages__title">Седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
           <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
@@ -91,15 +93,12 @@
           </li>
           <li class="presentation__highlights-img">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/desktop/hotel.webp 1x, img/desktop/hotel@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/tablet/hotel.webp 1x, img/tablet/hotel@2x.webp 2x">
-              <source type="image/webp" srcset="img/mobile/hotel.webp 1x, img/mobile/hotel@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/desktop/hotel.jpg 1x, img/desktop/hotel@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet/hotel.jpg 1x, img/tablet/hotel@2x.jpg 2x">
-              <img class="presentation__img" src="img/mobile/hotel.jpg" srcset="img/mobile/hotel@2x.jpg 2x" width="320"
-                height="260" alt="отель.">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/advantages/city-desktop.webp 1x, img/advantages/city-desktop2x.webp 2x" width="800" height="256">
+              <source media="(min-width: 1200px)" srcset="img/advantages/city-desktop.jpg 1x, img/advantages/city-desktop2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/advantages/city-tablet.webp 1x, img/advantages/city-tablet2x.webp 2x" width="512" height="256">
+              <source media="(min-width: 768px)" srcset="img/advantages/city-tablet.jpg 1x, img/advantages/city-tablet2x.jpg 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/advantages/photo-city.webp 1x, img/advantages/photo-city2x.webp 2x" width="320" height="260">
+              <img class="presentation__img" src="img/advantages/photo-city.jpg" srcset="img/advantages/photo-city2x.jpg 2x" width="320" height="260" alt="Домики Седоны на фоне гор">
             </picture>
           </li>
           <li class="presentation__item title presentation__item--house">
@@ -117,7 +116,7 @@
           <li class="presentation__item title presentation__item--gift">
             <div class="presentation__benefit">
               <h2 class="presentation__title presentation__title--gift">Сувениры</h2>
-              <p class="presentation__description presentation__description--gift">Не только китайского,<br> но&nbspи местного производства!
+              <p class="presentation__description presentation__description--gift">Не только китайского,<br> но&nbsp;и местного производства!
               </p>
             </div>
           </li>
@@ -130,16 +129,13 @@
           </li>
           <li class="presentation__preeminence-img">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/desktop/bridge.webp 1x, img/desktop/bridge@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/tablet/bridge.webp 1x, img/tablet/bridge@2x.webp 2x">
-              <source type="image/webp" srcset="img/mobile/bridge.webp 1x, img/mobile/bridge@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/desktop/bridge.jpg 1x, img/desktop/bridge@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet/bridge.jpg 1x, img/tablet/bridge@2x.jpg 2x">
-              <img class="presentation__img" src="img/mobile/bridge.jpg" srcset="img/mobile/bridge@2x.jpg 2x" width="320"
-                height="260" alt="мост.">
-            </picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/advantages/bridge-desktop.webp 1x, img/advantages/bridge-desktop2x.webp 2x" width="800" height="256">
+              <source media="(min-width: 1200px)" srcset="img/advantages/bridge-desktop.jpg 1x, img/advantages/bridge-desktop2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/advantages/bridge-tablet.webp 1x, img/advantages/bridge-tablet2x.webp 2x" width="512" height="256">
+              <source media="(min-width: 768px)" srcset="img/advantages/bridge-tablet.jpg 1x, img/advantages/bridge-tablet2x.jpg 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/advantages/photo-bridge.webp 1x, img/advantages/photo-bridge2x.webp 2x" width="320" height="260">
+              <img class="presentation__img" src="img/advantages/photo-bridge.jpg" srcset="img/advantages/photo-bridge2x.jpg 2x" width="320" height="260" alt="Скалы - Мост Дьявола">
+          </picture>
           </li>
           <li class="presentation__item">
             <div class="presentation__piece">
@@ -152,7 +148,7 @@
             <div class="presentation__piece">
               <h2 class="presentation__title-rank">Красивая дорога</h2>
               <p class="presentation__numbering">— №4 —</p>
-              <p class="presentation__description-rank presentation__description-rank--road">Ехать в седону из лас-вегаса совсем не&nbspскучно!</p>
+              <p class="presentation__description-rank presentation__description-rank--road">Ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
             </div>
           </li>
           <li class="presentation__item">
@@ -180,16 +176,12 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <noscript class="location__nojs">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/desktop/map-desktop.webp 1x, img/desktop/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/tablet/map-tablet.webp 1x, img/tablet/map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/map-desktop.webp 1x, img/desktop/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/map-tablet.webp 1x, img/tablet/map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/mobile/map-mobile.webp 1x, img/mobile/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="img/desktop/map-desktop.jpg 1x, img/desktop/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/desktop/map-desktop.jpg 1x, img/desktop/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/tablet/map-tablet.jpg 1x, img/tablet/map-tablet@2x.jpg 2x">
-            <img class="location__map-nojs" src="img/mobile/map-mobile.jpg" srcset="img/mobile/map-mobile@2x.jpg 2x" width="320"
-              height="350" alt="карта местоположение.">
+            <img class="location__map-nojs" src="img/mobile/map-mobile.jpg" srcset="img/mobile/map-mobile@2x.jpg 2x" width="320" height="350" alt="карта местоположение.">
           </picture>
           <svg class="location__marker" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
